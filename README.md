@@ -1,4 +1,4 @@
-![EduSpark Banner](./assets/banner.png)
+![EduSpark Banner](./assets/images/banner.png)
 
 # 🚀 EduSpark - Learning Management System (LMS)
 
