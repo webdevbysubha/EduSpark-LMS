@@ -1,0 +1,133 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #eef4ff, #f9fbff);
+  margin: 0;
+  padding: 0;
+}
+
+.contact-section {
+  padding: 70px 20px;
+}
+
+.highlight {
+  color: #1a73e8;
+  font-weight: 700;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  justify-content: center;
+}
+
+/* ✨ Contact Form Card */
+.contact-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  width: 360px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(26, 115, 232, 0.25);
+}
+
+.contact-card .form-group {
+  margin-bottom: 18px;
+}
+
+.contact-card label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+  color: #333;
+}
+
+.contact-card input,
+.contact-card textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.contact-card input:focus,
+.contact-card textarea:focus {
+  border-color: #1a73e8;
+  box-shadow: 0 0 6px rgba(26, 115, 232, 0.3);
+}
+
+/* ✨ Stylish Button */
+.btn-submit {
+  background: linear-gradient(90deg, #1a73e8, #48b0fa);
+  color: #fff;
+  padding: 12px 15px;
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-submit:hover {
+  transform: scale(1.03);
+  box-shadow: 0 5px 15px rgba(26, 115, 232, 0.4);
+}
+
+/* ✨ Contact Info Card */
+.contact-info {
+  max-width: 360px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(26, 115, 232, 0.25);
+}
+
+.contact-info h4 {
+  color: #1a73e8;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  font-size: 15px;
+  color: #444;
+}
+
+.contact-info a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.material-icons {
+  color: #1a73e8;
+  font-size: 26px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,275 @@
+:root {
+  --white: #ffffff;
+  --eerie-black-1: #1b1b1b;
+  --platinum: #e5e5e5;
+  --quick-silver: #a3a3a3;
+  --selective-yellow: #f7c600;
+  --kappel: #113946;
+  --kappel_15: rgba(17, 57, 70, 0.15);
+  --radical-red: #ff3c61;
+  --isabelline: #f5f1ee;
+
+  --radius-3: 6px;
+  --radius-5: 12px;
+
+  --fs-6: 0.875rem;
+
+  --fw-500: 500;
+  --fw-600: 600;
+
+  --ff-league_spartan: 'League Spartan', sans-serif;
+  --ff-poppins: 'Poppins', sans-serif;
+
+  font-family: var(--ff-league_spartan);
+}
+
+/* Section Background */
+.section.all-course-section {
+  background-color: rgb(241, 249, 249);
+}
+
+.course {
+  background-color: var(--isabelline);
+  padding: 60px 20px;
+}
+
+.all-course-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Heading Styling */
+.section-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #222;
+  margin-top: 0px;
+}
+
+.section-title .emoji {
+  font-size: 2.5rem;
+  margin-right: 6px;
+}
+
+.section-title .highlight {
+  color: #1a73e8; /* Blue Highlight */
+}
+
+/* Subheading Styling */
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+/* Search Box */
+.search-box {
+  margin: 2rem 0 3rem;
+  text-align: center;
+  position: relative;
+}
+
+.search-box input[type="text"] {
+  width: 60%;
+  max-width: 500px;
+  padding: 12px 18px 12px 48px;
+  font-size: 16px;
+  border: 2px solid transparent;
+  border-radius: var(--radius-5);
+  outline: none;
+  transition: border 0.4s ease, box-shadow 0.4s ease;
+  background-color: #fff;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/622/622669.png');
+  background-size: 20px;
+  background-position: 16px center;
+  background-repeat: no-repeat;
+  font-family: var(--ff-poppins);
+  box-shadow: 0 0 0 1px var(--platinum);
+}
+
+.search-box input[type="text"]:focus {
+  border-color: var(--kappel);
+  box-shadow: 0 0 8px rgba(17, 57, 70, 0.3);
+}
+
+.search-box input[type="text"]::placeholder {
+  color: var(--quick-silver);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+
+
+/* Grid Layout: 4 per row on desktop */
+.grid-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+/* Course Card */
+.course-card {
+  position: relative;
+  background-color: #fdfdfd;
+  border-radius: var(--radius-5);
+  overflow: hidden;
+  border: 1px solid #e3e3e3;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--selective-yellow);
+  box-shadow: 0 0 15px rgba(247, 198, 0, 0.3), 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+
+.course-card .img-cover {
+  width: 100%;
+  height: auto;
+  transition: var(--transition-2);
+  display: block;
+}
+
+.course-card:is(:hover, :focus-within) .img-cover {
+  transform: scale(1.1);
+}
+
+.course-card :is(.abs-badge, .badge) {
+  font-family: var(--ff-league_spartan);
+  border-radius: var(--radius-3);
+}
+
+.course-card .abs-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--selective-yellow);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  line-height: 1;
+  padding: 6px 8px 3px;
+}
+
+.course-card .abs-badge ion-icon {
+  font-size: 20px;
+  margin-bottom: 5px;
+  --ionicon-stroke-width: 50px;
+}
+
+.course-card .card-content {
+  padding: 25px;
+}
+
+.course-card .badge {
+  background-color: var(--kappel_15);
+  color: var(--kappel);
+  max-width: max-content;
+  line-height: 25px;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.course-card .card-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin: 15px 0 8px;
+  transition: var(--transition-1);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--eerie-black-1);
+  text-decoration: none;
+}
+
+.course-card .card-title:hover {
+  color: var(--kappel);
+}
+
+.course-card .wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.course-card .rating-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.course-card .rating-wrapper ion-icon {
+  color: var(--selective-yellow);
+}
+
+.course-card .rating-text {
+  color: var(--eerie-black-1);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-500);
+}
+
+.course-card .price {
+  color: var(--radical-red);
+  font-family: var(--ff-league_spartan);
+  font-size: 20px;
+  font-weight: var(--fw-600);
+  margin: 8px 0 15px;
+}
+
+.course-card .card-meta-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.course-card .card-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: var(--eerie-black-1);
+  margin-top: 10px;
+}
+
+.course-card .card-meta-item:not(:last-child)::after {
+  content: "|";
+  padding: 0 10px;
+  color: var(--platinum);
+}
+
+.course-card .card-meta-item ion-icon {
+  color: var(--quick-silver);
+  --ionicon-stroke-width: 50px;
+}
+
+.course-card .card-meta-item .span {
+  color: var(--eerie-black-1);
+}
+
+/* Responsive Improvements */
+@media (max-width: 768px) {
+  .grid-list {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  #searchInput {
+    width: 90%;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
+
+
