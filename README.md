@@ -34,18 +34,6 @@ It provides a **beautiful UI**, **filterable courses**, **testimonials**, **blog
 
 ---
 
-## 📸 Screenshots
-
-| Homepage | Courses | Blog |
-|----------|---------|------|
-| ![Home](./screenshots/home.png) | ![Courses](./screenshots/courses.png) | ![Blog](./screenshots/blog.png) |
-
-| Testimonials | FAQ | Contact |
-|--------------|------|---------|
-| ![Testimonials](./screenshots/testimonials.png) | ![FAQ](./screenshots/faq.png) | ![Contact](./screenshots/contact.png) |
-
----
-
 ## 🛠️ Tech Stack
 - **HTML5**
 - **CSS3**
