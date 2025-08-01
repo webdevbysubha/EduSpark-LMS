@@ -5,7 +5,7 @@
 EduSpark is a **modern, responsive, and interactive Learning Management System website** created as part of a **Virtual Internship Project**.  
 It provides a **beautiful UI**, **filterable courses**, **testimonials**, **blogs**, **FAQs**, and a **many more**.
 
-🔗 **Live Demo:** [Click Here](YOUR_LIVE_LINK)
+🔗 **Live Demo:** [Click Here](http://learnwitheduspark.vercel.app)
 
 ---
 
